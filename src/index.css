@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-background: #ffffff;
+  /* 1b1d3c */
+  --color-foreground: #000000;
+
+  --color-card: #2a2d42;
+
+  --color-primary: #f88f70;
+  --color-primary-foreground: #1c86ee;
+
+  --color-secondary: #6b4c9a;
+  --color-secondary-foreground: #ff1493;
+
+  --color-accent: #f5c1c1;
+  --color-accent-foreground: #ff69b4;
+
+  --color-muted: #888888;
+  --color-muted-foreground: #555555;
+
+  --color-cream: #fff8f0;
+  --color-lightGray: #e6e6e6;
+  --color-white: #ffffff;
+
+  --color-border: #242b32;
+
+  --radius: 0.75rem;
+
+  --color-highlight: #f5a623;
+  --color-surface: #1a2329;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .whisper-regular {
+    font-family: 'Whisper', cursive;
+  }
+}
+
+/* used for animations */
+@layer utilities {
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+      filter: blur(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out both;
+  }
+}
