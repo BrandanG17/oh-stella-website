@@ -3,7 +3,7 @@ export const Hero = () => {
     <section className='relative min-h-screen flex flex-col md:flex-row items-center bg-[#1B1D3C] text-white px-6 md:px-20 overflow-hidden'>
       {/* Bg */}
       <div className='absolute inset-0'>
-        <img src='/oh-stella-hero2.jpg' alt='Hero image' className='w-full h-full object-cover' />
+        <img src='oh-stella-hero2.jpg' alt='Hero image' className='w-full h-full object-cover' />
       </div>
 
       {/* Left: Band Photo */}
