@@ -61,7 +61,7 @@ export const About = () => {
         </p>
 
         <a
-          href='https://open.spotify.com/track/7dsImih2L25fa6qjNphBI7'
+          href='https://open.spotify.com/track/5zjIStKOUrY4wlMdh1O1l0?si=f9621dfed96f459e'
           target='_blank'
           rel='noopener noreferrer'
           className='mt-4 bg-[#51bb20] text-white px-6 py-3 rounded-md font-semibold hover:bg-white transition'
