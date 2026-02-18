@@ -1,4 +1,4 @@
-import heroImage from '/oh-stella-hero2.jpg';
+import heroImage from '/hero3.jpg';
 
 export const Hero = () => {
   return (

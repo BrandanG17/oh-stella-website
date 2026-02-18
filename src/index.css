@@ -1,37 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Whisper&display=swap');
 @import 'tailwindcss';
 
 @theme {
-  --color-background: #ffffff;
-  /* 1b1d3c */
-  --color-foreground: #000000;
+  /* 🌇 Base Backgrounds (for sections after hero) */
+  --color-background: #1f1b2e; /* Deep dusk purple */
+  --color-surface: #2a2238; /* Soft night plum */
+  --color-card: #342a45; /* Muted warm violet */
 
-  --color-card: #2a2d42;
+  /* ✨ Text */
+  --color-foreground: #f5f0eb; /* Warm off-white */
+  --color-muted-foreground: #c8bfb7;
 
-  --color-primary: #f88f70;
-  --color-primary-foreground: #1c86ee;
+  /* 🌅 Primary (Sunset Orange) */
+  --color-primary: #f4a261; /* Warm amber */
+  --color-primary-hover: #e76f51;
+  --color-primary-foreground: #1f1b2e;
 
-  --color-secondary: #6b4c9a;
-  --color-secondary-foreground: #ff1493;
+  /* 🌄 Secondary (Lavender Fade from Sky) */
+  --color-secondary: #a78bfa;
+  --color-secondary-hover: #8b5cf6;
+  --color-secondary-foreground: #ffffff;
 
-  --color-accent: #f5c1c1;
-  --color-accent-foreground: #ff69b4;
+  /* 🌇 Accent (Soft Peach Glow) */
+  --color-accent: #f6bd60;
+  --color-highlight: #ffb4a2;
 
-  --color-muted: #888888;
-  --color-muted-foreground: #555555;
-
-  --color-cream: #fff8f0;
-  --color-lightGray: #e6e6e6;
-  --color-white: #ffffff;
-
-  --color-border: #242b32;
+  /* 🌫 UI */
+  --color-border: #4a3b5a;
+  --color-input: #2c243a;
+  --color-ring: #f4a261;
 
   --radius: 0.75rem;
-
-  --color-highlight: #f5a623;
-  --color-surface: #1a2329;
 }
+
+/* PINK MELLOW */
+/* @theme {
+   🌌 Core Background 
+  --color-background: #1b1d3c;  Deep twilight blue 
+  --color-surface: #24285a;  Slightly lighter section bg 
+  --color-card: #2e326d;  Soft indigo card 
+
+   ✨ Text 
+  --color-foreground: #f4f2ff;  Creamy soft white 
+  --color-muted-foreground: #b6b8e6;  Soft lavender gray 
+  --color-link: #f8a5c2;
+  --color-link-hover: #ffb86c;
+
+   🎵 Brand / Primary 
+  --color-primary: #ff7aa2;  Pink cloud accent 
+  --color-primary-hover: #ff5f8f;
+  --color-primary-foreground: #1b1d3c;
+
+   🌊 Secondary 
+  --color-secondary: #6c63ff;  Dreamy violet 
+  --color-secondary-hover: #5a52e0;
+  --color-secondary-foreground: #ffffff;
+
+   🌅 Accent / Highlights 
+  --color-accent: #f8a5c2;  Soft pastel pink 
+  --color-highlight: #ffb86c;  Warm sunset glow 
+
+   🌫 UI 
+  --color-border: #3b3f7a;
+  --color-input: #2a2e66;
+  --color-ring: #ff7aa2;
+
+  --radius: 0.75rem;
+} */
 
 @layer base {
   html {
@@ -59,6 +96,14 @@
 
   .whisper-regular {
     font-family: 'Whisper', cursive;
+  }
+
+  .antonio-regular {
+    font-family: 'Antonio', sans-serif;
+  }
+
+  .poppins-regular {
+    font-family: 'Poppins', sans-serif;
   }
 }
 
