@@ -4,14 +4,13 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import path from 'path';
 
-export default defineConfig(({ mode }) => ({
+// https://vite.dev/config/
+export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: process.env.NODE_ENV === 'production' ? '/oh-stella-website/' : '/oh-stella-website/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
   },
-  // base is root for dev, repo name for production
-  // base: mode === 'production' ? '/oh-stella-website/' : '/',
-  base: '/oh-stella-website/',
-}));
+});

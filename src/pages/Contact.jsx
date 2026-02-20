@@ -1,8 +1,14 @@
-import { Mail, Phone, Instagram, Facebook, Twitter, Music, Youtube } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 import contactImage from '/oh-stella-hero.jpg';
+import {
+  InstagramIcon,
+  FacebookIcon,
+  TikTokIcon,
+  YouTubeIcon,
+} from '@/components/icons/SocialIcons';
 export const Contact = () => {
   return (
-    <section className='min-h-screen bg-gradient-to-br from-[#1B1D3C] via-[#23264A] to-[#2A2D42] text-white flex items-center justify-center px-6 py-16'>
+    <div className='min-h-screen bg-linear-to-br from-[#000000] via-[#2f3255] to-[#2A2D42] text-white flex items-center justify-center px-6 py-16'>
       <div className='max-w-5xl w-full grid md:grid-cols-2 gap-10 items-center'>
         {/* LEFT SIDE — BAND IMAGE */}
         <div className='relative group'>
@@ -15,7 +21,7 @@ export const Contact = () => {
 
         {/* RIGHT SIDE — CONTACT INFO */}
         <div className='bg-[#2A2D42]/80 backdrop-blur-lg rounded-2xl shadow-2xl p-10'>
-          <h1 className='text-4xl md:text-5xl font-bold text-primary mb-8'>Contact Us</h1>
+          <h1 className='text-4xl md:text-5xl font-bold text-white mb-8'>Contact Us</h1>
 
           <div className='space-y-6 text-lg'>
             {/* Email */}
@@ -38,7 +44,7 @@ export const Contact = () => {
                 rel='noopener noreferrer'
                 className='flex items-center gap-4 hover:text-primary hover:translate-x-1 transition duration-300'
               >
-                <Instagram size={22} />
+                <InstagramIcon />
                 Instagram
               </a>
 
@@ -48,7 +54,7 @@ export const Contact = () => {
                 rel='noopener noreferrer'
                 className='flex items-center gap-4 hover:text-primary hover:translate-x-1 transition duration-300'
               >
-                <Facebook size={22} />
+                <FacebookIcon />
                 Facebook
               </a>
 
@@ -58,7 +64,7 @@ export const Contact = () => {
                 rel='noopener noreferrer'
                 className='flex items-center gap-4 hover:text-primary hover:translate-x-1 transition duration-300'
               >
-                <Music size={22} />
+                <TikTokIcon />
                 TikTok
               </a>
 
@@ -68,13 +74,13 @@ export const Contact = () => {
                 rel='noopener noreferrer'
                 className='flex items-center gap-4 hover:text-primary hover:translate-x-1 transition duration-300'
               >
-                <Youtube size={22} />
+                <YouTubeIcon />
                 YouTube
               </a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };

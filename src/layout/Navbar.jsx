@@ -34,7 +34,7 @@ export const Navbar = () => {
 
         {/* CENTER LOGO (PC) */}
         <NavLink
-          to='/'
+          to='oh-stella-website/'
           className='hidden md:flex absolute left-1/2 transform -translate-x-1/2 text-5xl font-bold  text-center'
         >
           OH STELLA

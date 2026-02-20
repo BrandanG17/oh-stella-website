@@ -1,6 +1,6 @@
 export const TopSong = () => {
   return (
-    <section className='relative py-4 px-6 md:px-20 flex flex-col md:flex-row items-center gap-10  bg-background'>
+    <section className='relative py-14 px-6 md:px-20 flex flex-col md:flex-row items-center gap-10  bg-black'>
       {/* Left: YouTube iframe */}
       <div className='w-full md:w-1/4'>
         <iframe

@@ -1,7 +1,7 @@
 import { About } from '@/sections/About';
 import { Hero } from '@/sections/Hero';
 import { TopSong } from '@/sections/TopSong';
-import { Events } from '../sections/Events';
+import { EventsPreview } from '@/sections/EventsPreview';
 
 export const Home = () => {
   return (
@@ -10,7 +10,7 @@ export const Home = () => {
         <Hero />
         <TopSong />
         <About />
-        <Events />
+        <EventsPreview />
       </div>
     </main>
   );
