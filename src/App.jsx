@@ -10,7 +10,7 @@ export default function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path='oh-stella-website/' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/events' element={<Events />} />
         <Route path='/music' element={<Music />} />
         <Route path='/contact' element={<Contact />} />

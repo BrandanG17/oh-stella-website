@@ -34,7 +34,7 @@ export const Navbar = () => {
 
         {/* CENTER LOGO (PC) */}
         <NavLink
-          to='oh-stella-website/'
+          to='/'
           className='hidden md:flex absolute left-1/2 transform -translate-x-1/2 text-5xl font-bold  text-center'
         >
           OH STELLA
@@ -54,7 +54,7 @@ export const Navbar = () => {
         {/* MOBILE NAVIGATION */}
         <div className='flex md:hidden w-full justify-between items-center antonio-regular text-foreground'>
           {/* Mobile Logo */}
-          <NavLink to='oh-stella-website/' className='text-3xl font-bold'>
+          <NavLink to='/' className='text-3xl font-bold'>
             OH STELLA
           </NavLink>
 
