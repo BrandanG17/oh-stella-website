@@ -85,7 +85,6 @@ export const Music = () => {
 const SectionGrid = ({ title, items }) => (
   <div className='mb-32'>
     <h3 className='text-2xl md:text-3xl font-semibold mb-12'>{title}</h3>
-
     <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12'>
       {items.map((item, index) => (
         <motion.div
@@ -94,20 +93,29 @@ const SectionGrid = ({ title, items }) => (
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: index * 0.1 }}
           viewport={{ once: true }}
-          className='group relative'
+          className='relative rounded-2xl overflow-hidden'
         >
-          <img
-            src={item.cover}
-            alt={item.title}
-            className='w-full aspect-square object-cover rounded-2xl transform group-hover:scale-105 transition duration-500'
-          />
+          {/* Hidden checkbox to track tap */}
+          <input type='checkbox' className='peer hidden' id={`card-${index}`} />
 
-          <div className='absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition flex flex-col items-center justify-center gap-4 rounded-2xl'>
-            <p className='text-xl md:text-5xl font-semibold'>{item.title}</p>
-            {/* <div className='flex gap-6'>
-                <YouTubeIcon size={24} />
-              </div> */}
-          </div>
+          {/* Card label acts as clickable area */}
+          <label htmlFor={`card-${index}`} className='block cursor-pointer group'>
+            <img
+              src={item.cover}
+              alt={item.title}
+              className='w-full aspect-square object-cover rounded-2xl transform transition duration-500 group-hover:scale-105 peer-checked:scale-105'
+            />
+
+            {/* Overlay */}
+            <div
+              className='absolute inset-0 bg-black/70 flex items-center justify-center rounded-2xl
+                        opacity-0 transition duration-500
+                        group-hover:opacity-100
+                        peer-checked:opacity-100'
+            >
+              <p className='text-xl md:text-5xl font-semibold text-center'>{item.title}</p>
+            </div>
+          </label>
         </motion.div>
       ))}
     </div>
