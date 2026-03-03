@@ -1,16 +1,81 @@
-# React + Vite
+# 🎸 Oh Stella! Official Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern indie/alt band website built with **React 19**, **Vite**, and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+This project serves as the official web presence for _Oh Stella!_, showcasing music releases, events, and contact information in a clean, responsive interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🌐 Live Site
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 https://thisisohstella.vercel.app
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+- React 19
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Lucide React Icons
+- ESLint
+- Vercel (Deployment & CI/CD)
+
+---
+
+## ✨ Features
+
+- Responsive mobile-first layout
+- Smooth animations using Framer Motion
+- Music showcase section
+- Events page
+- Contact page
+- Production build optimized with Vite
+- Automatic deployment via Vercel
+
+---
+
+## 🚀 Running Locally
+
+Clone the repository:
+
+```
+git clone https://github.com/BrandanG17/oh-stella-website.git
+```
+
+Install dependencies:
+
+```
+npm install
+```
+
+Start development server:
+
+```
+npm run dev
+```
+
+Build for production:
+
+```
+npm run build
+```
+
+Preview production build:
+
+```
+npm run preview
+```
+
+---
+
+## 📌 Status
+
+Actively maintained and updated with new releases.
+
+---
+
+## 👨‍💻 Author
+
+Built by **Aeron Gumila**
