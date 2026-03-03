@@ -6,13 +6,14 @@ import hanapin from '/album-covers/hanapin.jpg';
 import hereForYou from '/album-covers/here-for-you.jpg';
 import illSeeYouSoon from '/album-covers/ill-see-you-soon.jpg';
 import diBaPwede from '/album-covers/di-ba-pwede.jpg';
+import sana from '/album-covers/sana.jpg';
 
 export const featured = {
-  title: 'Dito Ka Lang',
-  year: '2025',
-  cover: ditoKaLang,
-  spotify: 'https://open.spotify.com/track/5zjIStKOUrY4wlMdh1O1l0?si=971957f485824197',
-  youtube: 'https://www.youtube.com/watch?v=bnQWVZy2V3k&list=RDbnQWVZy2V3k&start_radio=1',
+  title: 'Sana',
+  year: '2026',
+  cover: sana,
+  spotify: 'https://open.spotify.com/track/5RrDA3olSgav14H16vEmcg?si=337853b3cb8b4d3b',
+  youtube: 'https://youtu.be/1hMwLwl4tYg?si=FyosQhu7gP43mZjR',
 };
 
 // export const albums = [
@@ -26,6 +27,16 @@ export const featured = {
 // ];
 
 export const singles = [
+  {
+    title: 'Sana',
+    year: '2026',
+    cover: sana,
+  },
+  {
+    title: 'Dito Ka Lang',
+    year: '2025',
+    cover: ditoKaLang,
+  },
   {
     title: "Fallin'",
     year: '2025',
